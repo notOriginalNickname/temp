@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="root.system.Controller">
+ <MenuBar>
+  <Menu text="About">
+   <MenuItem text="Операционные системы и оболочки" />
+   <MenuItem text="Java" />
+   <MenuItem text="Ненашев А.И." />
+   <MenuItem text="Рпис-11" />
+  </Menu>
+ </MenuBar>
+
+
+ <TextField fx:id="pathField" editable="false" focusTraversable="false" />
+
+
+ <ListView fx:id="filesList" onMouseClicked="#filesListClicked" VBox.vgrow="ALWAYS" />
+
+ <HBox spacing="1">
+ <Button maxWidth="Infinity" text="View" HBox.hgrow="ALWAYS"> </Button>
+<Button maxWidth="Infinity" text="Copy" HBox.hgrow="ALWAYS"> </Button>
+ <Button maxWidth="Infinity" text="Paste" HBox.hgrow="ALWAYS"> </Button>
+ <Button maxWidth="Infinity" text="Move" HBox.hgrow="ALWAYS"> </Button>
+ <Button maxWidth="Infinity" text="Delete" HBox.hgrow="ALWAYS"> </Button>
+  <padding>
+   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+  </padding>
+ </HBox>
+
+</VBox>
